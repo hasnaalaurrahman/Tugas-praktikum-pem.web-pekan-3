@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>prak_web_2_Hasna</title>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body bgcolor="ivory" style="text-decoration-color: sienna;">
+        <form action="form pembelian.html" method="POST"></form>
+        <h4>WUNIQUe.id</h4>
+        <fieldset style="background-color:rgb(223, 188, 144)">
+            <legend style="text-align: center;"><h2>Order Form</h2><h2>Formulir Pemesanan</h2></legend>
+            <div>
+                <h3>Personal Information / Informasi Pribadi</h3>
+                <ul>
+                    <li>
+                        <label for="Nama">Name/Nama  :   </label>
+                        <div>
+                            <input id="Nama" type="text" name="Nama" required>
+                        </div>
+                    </li>
+                    <li>
+                        <label for="Phone">Phone number/No. Hp   :   </label>
+                        <div>
+                            <input id="Phone" type="number" name="Phone" required>
+                        </div>
+                    </li>
+                    <li>
+                        <label for="Email">E-mail   :   </label>
+                        <div>
+                            <input id="Email" type="email" name="Email" required>
+                        </div>
+                    </li>
+                    <li>
+                        <label for="Alamat">Address (detail)/Alamat (lengkap)  :   </label>
+                        <div>
+                            <textarea name="Alamat" rows="6" cols="35" required></textarea>
+                        </div>
+                    </li>
+                    <li>
+                        <label for="Kodepos">Postal code/Kode Pos  :   </label>
+                        <div>
+                            <input id="Kodepos" type="number" name="Kodepos" required>
+                        </div>
+                    </li>
+                    <li>
+                        <label for="Shipment">Shipment Type/JenisPengiriman  :   </label>
+                        <div>
+                            <input type="radio" id="Os" name="Os">
+                            <label for="Os">Overseas Shipment</label>
+                            <input type="radio" id="Ids" name="Ids">
+                            <label for="Ids">Indonesia/Domestic Shipment</label>
+                        </div>
+                    </li>
+                </ul>
+                <h3>Order Details / Detail Pemesanan</h3>
+                <ul>
+                    <li>
+                        <label for="Product">Product Name (with code)/Nama Produk (beserta kode)  :   </label>
+                        <div>
+                            <input id="Product" type="text" name="Product" placeholder="Wall Display(009)" required>
+                        </div>
+                    </li>
+                    <li>
+                        <label for="cp">Color of Product (with code)/Warna Produk (beserta kode)  :   </label>
+                        <div>
+                            <input id="Product" type="text" name="Product" placeholder="Light blue(009)" required>
+                        </div>
+                    </li>
+                    <li>
+                        <label for="Qty">Qty  :   </label>
+                        <div>
+                            <select name="qty" required>
+                                <option value="">--Select--</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                        </div>
+                    </li>
+                    <li>
+                        <label for="ap">Additional Packaging/Pengemasan Tambahan  :   </label>
+                            <div>
+                                <input type="checkbox" id="bw" name="bw">
+                                <label for="bw">Bubble Wrap</label>
+                                <input type="checkbox" id="sty" name="sty">
+                                <label for="sty">Styrofoam</label>
+                            </div>
+                    </li>
+                    <li>
+                        <label for="Note">Note/Catatan  :   </label>
+                        <div>
+                            <textarea name="Note" rows="8" cols="50"></textarea>
+                        </div>
+                    </li>
+                </ul>
+                <h3>Payment / Pembayaran</h3>
+                <ul>
+                    <li>
+                        <label for="p">Payment Methods/Metode Pembayaran   :   </label>
+                        <div>
+                            <select name="p" required>
+                                <option value="">--Select--</option>
+                                <option value="Tunai">Tunai Alfamart</option>
+                                <option value="Ewallet">OVO/DANA/GOPAY</option>
+                                <option value="transfer">Transfer Bank</option>
+                            </select>
+                        </div>
+                    </li>
+                    <li>
+                        <label for="Upload">Payment Confirmation/Konfirmasi Pembayaran  :   </label>
+                        <p>Upload it here/Unggah disini</p>
+                        <div>
+                            <input id="Upload" type="file" name="Upload" required>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div style="text-align: center;" >
+                <input type="submit" value="Order Now" name="Order_Now">
+            </div>
+        </fieldset>
+    </body>
+</html>
